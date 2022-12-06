@@ -12,9 +12,7 @@
   --icon-main-color:#afb1b8;
   --icon-footer-background-color:rgba(255, 255, 255, 0.1);
   --animatiom-btn: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  --transition: transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
 body {
   background-color: var(--white);
@@ -108,7 +106,6 @@ img {
 .site-nav_link:hover,
 .site-nav_link:focus {
   color: var(--accent);
-  transition: var(--transition);
 }
 
 .site-nav_link.current::after {
@@ -156,7 +153,6 @@ img {
 .auth-nav_link:hover, 
 .auth-nav_link:focus {
   color: var(--accent);
-  transition: var(--transition);;
 }
 
 .auth-nav_icon{
@@ -367,7 +363,6 @@ img {
 .social-link:focus{
   background-color: var(--accent);
   fill: var(--white);
-   transition: var(--transition);
 }
 /*our clients*/
 .clients-title{
@@ -408,7 +403,6 @@ img {
 .clients-link:focus {
   fill: var(--accent);
   border-color: var(--accent);
-  transition: var(--transition);
 }
 /*footer*/
 .page-footer {
@@ -455,7 +449,6 @@ img {
 .direction-link:hover,
 .direction-link:focus {
   color: #2196f3;
-  transition: var(--transition);
 }
 
 /*приєднуємся*/
@@ -497,7 +490,6 @@ img {
 .footer__social-link:focus {
   background-color: var(--accent);
   fill: var(--white);
-  transition: var(--transition);
 }
 /*форма футера*/
 .form{
@@ -603,12 +595,12 @@ margin-left: 93px;
   background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: var(--animatiom-btn);
 }
 
 .modal-close:hover,
 .modal-close:focus{
   fill: var(--accent);
-  transition: var(--transition);
   cursor: pointer;
 }
 .modal-thumb{
@@ -649,6 +641,7 @@ margin-left: 93px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition: var(--animatiom-btn);
 }
 .modal-icon{
   position: absolute;
@@ -658,13 +651,11 @@ margin-left: 93px;
 .modal-input:focus {
  border-color: var(--accent);
 cursor: pointer;
-  transition: var(--transition);
 }
 
 .modal-input:focus + .modal-icon {
   fill: var(--accent);
   cursor: pointer;
-  transition: var(--transition);
 }
 .modal-textarea{
   width: 448px;
@@ -713,9 +704,9 @@ cursor: pointer;
     border: 2px solid #212121;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-.checkbox-conditions{
+  transition: var(--animatiom-btn);}
+
+  .checkbox-conditions{
   margin-left: 7px;
 }
 .checkbox-link{
@@ -750,11 +741,12 @@ line-height: 1.88;
 letter-spacing: 0.06em;
 color: var(--white);
 cursor: pointer;
+transition: var(--animatiom-btn);
 }
 .submit-button:hover,
 .submit-button:focus{
   background-color: #188CE8;
-  transition: var(--transition);}
+  }
 /*css for portfolio*/
 .options_button {
   padding: 6px 25px;
@@ -781,7 +773,7 @@ cursor: pointer;
   color: var(--white);
   background-color: var(--accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--transition);}
+  }
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -799,7 +791,6 @@ cursor: pointer;
 .card-list_item:focus{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: var(--transition);
 
 }
 .card-list_link {
@@ -844,10 +835,9 @@ cursor: pointer;
   background: rgba(33, 150, 243, 0.9);
   color: var(--white);
   transform:translateY(100%);
-  transition: var(--transition);}
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .card-list_link:hover .overlay-text,
 .card-list_link:focus .overlay-text{
   transform: translateY(0);
-
 }
