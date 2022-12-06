@@ -532,15 +532,24 @@
                 placeholder="Введіть текст"
               ></textarea>
             </label>
-            <label class="checkbox-label">
-              <input
-                class="checkbox"
-                type="checkbox"
-                name="agreement"
-                value="agreement"
-              />
-              Погоджуюся з розсилкою та приймаю Умови договору
-            </label>
+            <div class="checkbox-form">
+              <label class="checkbox-label">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  name="agreement"
+                  value="agreement"
+                />
+                <span class="checkbox"> </span>
+                Погоджуюся з розсилкою та приймаю
+              </label>
+              <span class="checkbox-conditions">
+                <a class="checkbox-link" href="">Умови договору </a>
+              </span>
+            </div>
+            <div class="modal-button">
+              <button class="submit-button" type="submit">Відправити</button>
+            </div>
           </form>
         </div>
       </div>
